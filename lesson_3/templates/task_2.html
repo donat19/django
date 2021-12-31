@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="margin-left: 30%; margin-right: 30%">
+<table style="text-align: left; padding: 3em; width: 100%">
+    <tr>
+        <td>Добро пожаловать во вселенную звездных войн!
+                        Выберите страницу:</td>
+    </tr>
+    <tr>
+        <th>name_page</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>lukepage</td>
+        <td><a href="{% url 'posts_list' 'lukepage' %}" type="button">lukepage link</a></td>
+    </tr>
+    <tr>
+        <td>hanpage</td>
+        <td><a href="{% url 'posts_list' 'hanpage' %}" type="button">hanpage link</a></td>
+    </tr>
+    <tr>
+        <td>leipage</td>
+        <td><a href="{% url 'posts_list' 'leipage' %}" type="button">leipage link</a></td>
+    </tr>
+</table>
+
+</html>
